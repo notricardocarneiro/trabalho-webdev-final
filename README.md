@@ -8,4 +8,4 @@
 - Unidade: Estácio Maracanã
 - Orientador: Ronaldo Candido
 
-## Site de prestaçao de serviços de desenvolvimento de sites e app mobile com integração a um banco de dados MySQL pelo metodo POST usando MySQLI.
+## Site de prestaçao de serviços de desenvolvimento de sites e app mobile com integração a um banco de dados MySQL pelo metodo POST usando MySQLI, Javascript, HTML e CSS.
