@@ -1,0 +1,247 @@
+/*
+Nome: Ricardo Gonçalves Carneiro
+Matricula: 202302196731
+Turma: 3001
+Turno: Noite
+Unidade: Estácio Maracanã
+Orientador: Ronaldo Candido
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #E3B23C;
+    /*--cor-terciaria: #22D4FD;  azul*/
+    --cor-hover: #272727;
+    
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(to top, #000000, #434343);
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    flex: 1;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__form {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    text-shadow: 2px 2px 2px #222222;
+}
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.4375rem;
+    font-family: var(--fonte-secundaria);
+}
+span{
+    color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
+    padding: 2.5px;
+    text-shadow: 2px 2px 2px #222222;
+}
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400px;
+    font-size: 1.5rem;
+}
+.apresentacao__links__navegacao {
+    color: var(--cor-secundaria);
+    /* background-color: #E3B23C; */
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 21.5px 0;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    transition: 0.5s;
+}
+
+.apresentacao__links__navegacao__form {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 21.5px 0;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    transition: 0.5s;
+}
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    width: 55%;
+}
+
+.apresentacao__links__navegacao__form:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-hover);
+}
+.cabecalho__menu__link:hover {
+    color: var(--cor-secundaria);
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px #222222;
+}
+
+.botao__servicos{
+display: flex;
+gap: 20px;
+}
+
+.lista__servicos:hover {
+    color: var(--cor-terciaria);
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px #222222;
+}
+.apresentacao__imagem {
+    width: 50%;
+}
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form {
+    height: 20px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+    margin: 5px 0 5px 0;
+}
+.lista__servicos {
+    margin-bottom: 5px;
+}
+.txtarea {
+    height:250px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+    margin-top: 5px;
+}
+
+.rodape img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s;
+}
+
+.rodape img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1210px) {
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+    .apresentacao__links__navegacao__form {
+        margin-left: 100px;
+    }
+    .logo {
+        height: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+}

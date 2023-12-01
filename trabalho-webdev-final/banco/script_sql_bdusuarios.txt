@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS bdusuarios ;
+USE bdusuarios ;
+CREATE TABLE IF NOT EXISTS `tbusuario` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `usuario` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `texto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `tbusuario` (`id`, `nome`, `usuario`, `email`, `senha`, `texto`) VALUES
+(33, 'admin', 'admin', 'admin@gmail.com', 'admin', '');
+ALTER TABLE `tbusuario`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `usuario` (`usuario`),
+  ADD UNIQUE KEY `email` (`email`);
+ALTER TABLE `tbusuario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+COMMIT;
